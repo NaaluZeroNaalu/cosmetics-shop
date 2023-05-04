@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pay.css">
+    <title>Payment</title>
+</head>
+<body >
+    <div class="container">
+        <div class="wrapper">
+          
+            <div class="checkout-text">
+    
+                <div class="back-to-home">
+                    <a href="">Home page</a>
+                    <img src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png" alt="Arrow" height="15px" width="15px" />
+                    <a href="">Payment</a>
+                </div>
+
+                <div class="pay-button">
+                    <button disabled>
+                        <span>Payment Details</span>
+                    </button>
+                </div>
+
+                <div class="or-line">
+                    
+                </div>
+                <div class="country-region">
+                    <label>SELECT PAYMENT METHOD</label>
+                    <select id="method" oninput="payment()">
+                        <option>Card</option>
+                        <option>Cash on delivery</option>
+                    </select>
+                    
+                </div>
+    
+                <div class="card-details">
+                    <label>Card details</label>
+                    <div class="card-number">
+                        <input type="number" id="card" placeholder="0000 0000 0000 0000" />
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/visa.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/mastercard.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/amex.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="mm-yy">
+                            <input type="text" id="carda" placeholder="MM / YY" maxlength="5" />
+                        </div>
+                        <div class="cvc">
+                            <input type="text" id="cardb" placeholder="CVC" maxlength="3" />
+                            <img src="https://img.icons8.com/ios/50/000000/card-verification-value.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="owner-name">
+                    <label>name</label>
+                    <input type="text" placeholder="Your name" />
+                </div>
+    
+                <div class="country-region">
+                    <label>Address</label>
+                    <input type="text" placeholder="Address" />
+                    <label>Pincode</label>
+                    <input type="number" placeholder="000000" />
+                </div>
+    
+                <button class="buy-button" ><a href="thankyou.html">Pay</a></button>
+    
+            </div>
+        </div>
+    
+        <script src="js/pay.js"></script>
+</body>
+</html>

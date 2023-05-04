@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="thankyou">
+        <img src="https://img.icons8.com/color/480/null/ok--v1.png"/>
+        <h3>PURCHASED SUCCESSFULLY</h3>
+        <a href="home.php">BACK TO HOME PAGE</a>
+    </div>
+
+    
+
+    <style>
+        @keyframes thankyou
+        {
+            from{
+                width: 0px;
+                height: 0px;
+            }
+            to{
+                width: 480px;
+                height: 480px;
+            }
+        }
+
+        .thankyou
+        {
+            position: absolute;
+            left: 450px;
+            text-align: center;
+            
+        }
+
+        .thankyou img 
+        {
+            animation-name: thankyou;
+            animation-duration: 1s;
+        }
+    </style>
+</body>
+</html>
